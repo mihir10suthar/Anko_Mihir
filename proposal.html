@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Question</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+
+<body class="fade-in login">
+<div class="login-box">
+
+  <p>My dearest Ankita…</p>
+  <h2 class="heartbeat">Will you marry me? 💍</h2>
+
+  <button onclick="yes()">YES 💖</button>
+  <button id="noBtn" onmouseover="runAway()">NO 😏</button>
+
+  <p id="answer"></p>
+
+  <form
+    id="yesForm"
+    action="https://formspree.io/f/abcdwxyz"
+    method="POST"
+    style="display:none;"
+  >
+    <input type="hidden" name="_subject" value="22-02 💍 Ankita Said YES">
+    <input type="hidden" name="_redirect" value="https://yourusername.github.io/yes.html">
+    <textarea name="message" required placeholder="Tell me what you felt…"></textarea>
+    <button type="submit">Send to Mihir 💌</button>
+  </form>
+
+</div>
+
+<script>
+function yes(){
+  confetti();
+  document.getElementById("answer").innerText="You said YES 💍";
+  document.getElementById("yesForm").style.display="block";
+}
+</script>
+</body>
+</html>
