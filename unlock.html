@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="app center">
+<h1>Ankita ♥ Mihir</h1>
+
+<p id="unlock-msg" class="big-text">
+This little world is made only for you ❤️  
+Please wait <span id="sec">10</span> seconds…
+</p>
+
+<script>
+let s=10;
+setInterval(()=>{
+  s--;
+  document.getElementById("sec").innerText=s;
+  if(s==0) location.href="home.html";
+},1000);
+</script>
+
+</body>
+</html>
